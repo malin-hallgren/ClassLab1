@@ -5,6 +5,9 @@ public class Circle
 {
     public int radius;
 
+
+    //Defines three methods to get area, circumference and hypothetical
+    //volume of the circle/sphere using radius defined in creation of Object
     public double GetArea()
     {
         return radius * radius * Math.PI;

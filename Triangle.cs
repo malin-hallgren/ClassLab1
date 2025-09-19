@@ -5,6 +5,9 @@ public class Triangle
 	public int height;
 	public int width;
 
+	//Defines three mathematical methods to calculate area, perimeter
+	//and hypothetical volume of a triangle/pyramid, using width and height
+	//passed to instance of class upon creation of object.
 	public double GetArea()
 	{
 		return (height * width)/2;
