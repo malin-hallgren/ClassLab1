@@ -3,20 +3,25 @@ using System.Numerics;
 
 public class Circle
 {
-    public int radius;
+    public int Radius { get; set; }
+    public Circle (int radius)
+    {
+        this.Radius = radius;
+    }
+    
 
     public double GetArea()
     {
-        return radius * radius * Math.PI;
+        return Radius * Radius * Math.PI;
     }
 
     public double GetCircumference()
     {
-        return (radius * 2) * Math.PI;
+        return (Radius * 2) * Math.PI;
     }
 
     public double GetVolume()
     {
-        return (Math.Pow(radius, 3) * Math.PI) * (4.0/3.0);
+        return (Math.Pow(Radius, 3) * Math.PI) * (4.0/3.0);
     }
 }

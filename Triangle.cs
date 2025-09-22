@@ -2,8 +2,14 @@
 
 public class Triangle
 {
-	public int height;
-	public int width;
+	public int height {  get; set; }
+	public int width{ get; set; }
+
+	public Triangle (int height, int width)
+	{
+		this.height = height;
+		this.width = width;
+	}
 
 	public double GetArea()
 	{
