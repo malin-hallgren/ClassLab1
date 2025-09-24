@@ -15,7 +15,7 @@ public class Circle
             }
             else
             {
-                Console.WriteLine("Radien måste vara större än 0");
+                Console.WriteLine("Radius must be above 0");
             }
         }
     }
