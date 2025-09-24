@@ -3,10 +3,25 @@ using System.Numerics;
 
 public class Circle
 {
-    public int Radius { get; set; }
+    private int _radius;
+
+    public int Radius 
+    { 
+        get {  return _radius; }
+        set {
+            if (value > 0)
+            {
+                _radius = value;
+            }
+            else
+            {
+                Console.WriteLine("Radien måste vara större än 0");
+            }
+        }
+    }
     public Circle (int radius)
     {
-        this.Radius = radius;
+        Radius = radius;
     }
     
 
